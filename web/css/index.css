@@ -18,9 +18,9 @@
     height: 100%;
     width: 100%;
     background: url(../images/poster_guerra.jpg);
-    box-shadow: inset 0px -25px 25px #212121;
+    box-shadow: inset 0px -25px 25px var(--bg);
     z-index: -100;
-    background-position: center;
+    background-position: 80%;
     background-position-y: 30%;
     filter: opacity(.4);
 }

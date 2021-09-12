@@ -1,5 +1,5 @@
 #hero {
-    height: 450px;
+    min-height: 450px;
     position: relative;
     display: flex;
 }
@@ -28,9 +28,9 @@
     height: 100%;
     width: 100%;
     background: url(../images/poster_viuva.jpg);
-    box-shadow: inset 0px -25px 25px #212121;
+    box-shadow: inset 0px -25px 25px var(--bg);
     z-index: -100;
-    background-position: center;
+    background-position: 70%;
     background-position-y: 10%;
     filter: opacity(.3);
 }
@@ -38,6 +38,7 @@
 main {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 } 
 
 
@@ -45,6 +46,7 @@ main .infos .botoes a {
     width: 10rem;
     display: inline-block;
     margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 main .infos h2 {
@@ -53,6 +55,8 @@ main .infos h2 {
 
 main .infos .atores {
     display: flex;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
 }
 
 main .infos .atores .ator {
@@ -60,7 +64,7 @@ main .infos .atores .ator {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
 }
 
 main .infos .atores .ator .perfil {
@@ -90,6 +94,7 @@ main aside {
     background-color: #2E2E2E;
     margin-right: 2rem;
     width: 250px;
+    height: min-content;
 }
 
 main aside h2 {
@@ -105,4 +110,8 @@ main aside p {
     color: #747474;
 }
 
-
+@media (max-width:768px) {
+    #hero {
+        flex-wrap: wrap;
+    }
+}

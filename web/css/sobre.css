@@ -1,5 +1,5 @@
 #hero {
-    height: 450px;
+    min-height: 450px;
     position: relative;
     display: flex;
 }
@@ -28,17 +28,12 @@
     height: 100%;
     width: 100%;
     background: url(../images/background_movies.jpg);
-    box-shadow: inset 0px -25px 25px #212121;
+    box-shadow: inset 0px -25px 25px var(--bg);
     z-index: -100;
     background-position: center;
     background-position-y: 10%;
     filter: opacity(.3);
 }
-
-main {
-    display: flex;
-    justify-content: space-between;
-} 
 
 
 main .infos .botoes a {
@@ -53,6 +48,9 @@ main .infos h2 {
 
 main .infos .membros {
     display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
 }
 
 main .infos .membros .membro {
@@ -60,7 +58,7 @@ main .infos .membros .membro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
 }
 
 main .infos .membros .membro .perfil {
@@ -80,28 +78,6 @@ main .infos .membros .membro .descricao {
     text-align: center;
 }
 
-main .infos .membros .membro .descricao p{
+main .infos .membros .membro .descricao img{
     margin-top: 0.8rem;
-    color: #747474;
 }
-
-main aside {
-    padding: 12px;
-    background-color: #2E2E2E;
-    margin-right: 2rem;
-    width: 250px;
-}
-
-main aside h2 {
-    margin-bottom: 2rem;
-}
-
-main aside h4 {
-    margin-top: 1.2rem;
-}
-
-main aside p {
-    margin-top: 0.4rem;
-    color: #747474;
-}
-

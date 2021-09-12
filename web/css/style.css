@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+:root {
+    --bg: #212121;
+    --bg2: #444444;
+    --primary: #FF0066;
+    --base-color: #FFF;
+}
+
+
+/* css reset */
+
+* {
+    margin: 0;
+    color: var(--base-color);
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 1.5rem;
+    background-color: var(--bg2);
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-self: center;
+}
+
+nav a:hover {
+    color: var(--primary);
+    border-bottom: var(--primary) 3px solid;
+    padding-bottom: 1rem;
+}
+
+a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    flex: 2;
+}
+
+nav li:nth-child(3) {
+    flex: 2;
+    text-align: end;
+}
+
+main {
+    margin-left: 3rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    border-left: var(--primary) 5px solid;
+    line-height: 20px;
+    padding-left: .2rem;
+    margin: 1rem 0;
+}
+
+.botao {
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: .5rem;
+    padding: .8rem 0;
+    text-align: center;
+    transition: box-shadow all 1s ease-in-out;
+}
+
+.botao:hover {
+    box-shadow: 0px 0px 10px var(--primary);
+}
+
+@media (max-width:768px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:425px) {
+    nav li:nth-child(3) {
+        flex: 1;
+        text-align: start;
+    }
+}

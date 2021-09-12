@@ -1,0 +1,72 @@
+#hero {
+    height: 320px;
+    position: relative;
+}
+
+#hero p {
+    width: 40%;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 56px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    padding: 6rem;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/poster_guerra.jpg);
+    box-shadow: inset 0px -25px 25px #212121;
+    z-index: -100;
+    background-position: center;
+    background-position-y: 30%;
+    filter: opacity(.4);
+}
+
+.lista-de-filmes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem;
+}
+
+.filme * {
+    margin-bottom: .5rem;
+}
+
+.poster {
+    height: 280px;
+    border-radius: 5px;
+}
+
+.filme .titulo {
+    font-size: 1.75rem;
+}
+
+.nota {
+    display: flex;
+    align-items: center;
+}
+
+.nota span {
+    color: gold;
+    margin-right: .3rem;
+}
+
+.nota p {
+    filter: opacity(.5);
+}
+
+@media (max-width:768px) {
+    #hero p {
+        padding: 3rem;
+    }
+}

@@ -1,0 +1,107 @@
+#hero {
+    height: 450px;
+    position: relative;
+    display: flex;
+}
+
+#hero img {
+    height: 280px;
+    margin: 3rem;
+}
+
+#hero .detalhes{
+    margin: 3rem;
+}
+
+#hero h2 {
+    font-size: 2.3rem;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/background_movies.jpg);
+    box-shadow: inset 0px -25px 25px #212121;
+    z-index: -100;
+    background-position: center;
+    background-position-y: 10%;
+    filter: opacity(.3);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+} 
+
+
+main .infos .botoes a {
+    width: 10rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+main .infos h2 {
+    margin: 2rem 0;
+}
+
+main .infos .membros {
+    display: flex;
+}
+
+main .infos .membros .membro {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+main .infos .membros .membro .perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+main .infos .membros .membro .descricao {
+    background: #2E2E2E;
+    margin-top: -80px;
+    padding: 110px 30px 30px 30px;
+    width: 170px;
+    height: 100px;
+    z-index: 1;
+    text-align: center;
+}
+
+main .infos .membros .membro .descricao p{
+    margin-top: 0.8rem;
+    color: #747474;
+}
+
+main aside {
+    padding: 12px;
+    background-color: #2E2E2E;
+    margin-right: 2rem;
+    width: 250px;
+}
+
+main aside h2 {
+    margin-bottom: 2rem;
+}
+
+main aside h4 {
+    margin-top: 1.2rem;
+}
+
+main aside p {
+    margin-top: 0.4rem;
+    color: #747474;
+}
+

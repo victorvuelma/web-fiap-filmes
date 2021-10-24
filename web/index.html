@@ -20,8 +20,8 @@
         <h1>FIAP Filmes</h1>
         <nav>
             <ul>
-                <li><a href="index.html#filmes">Filmes</a></li>
-                <li><a href="index.html#series">Séries</a></li>
+                <li><a href="index.html#filmes_alta">Filmes</a></li>
+                <li><a href="index.html#series_alta">Séries</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
@@ -33,70 +33,18 @@
     </div>
 
     <main>
-        <h2 id="filmes">Filmes em alta</h2>
-        <div class="lista-de-filmes">
-            <section class="filme">
-                <img class="poster" src="./images/luca.jpg" alt="Poster do filme Luca da Disney">
-                <p class="titulo">Luca</p>
-                <div class="nota">
-                    <span class="material-icons">
-                        star
-                    </span>
-                    <p>8,8</p>
-                </div>
-                <a class="botao" href="">Detalhes</a>
-            </section>
-            <section class="filme">
-                <img class="poster" src="./images/viuva.jpg" alt="">
-                <p class="titulo">Viúva Negra</p>
-                <div class="nota">
-                    <span class="material-icons">
-                        star
-                    </span>
-                    <p>8,8</p>
-                </div>
-                <a class="botao" href="detalhes.html">Detalhes</a>
-            </section>
-            <section class="filme">
-                <img class="poster" src="./images/jungle.jpg" alt="">
-                <p class="titulo">Jungle</p>
-                <div class="nota">
-                    <span class="material-icons">
-                        star
-                    </span>
-                    <p>8,8</p>
-                </div>
-                <a class="botao" href="">Detalhes</a>
-            </section>
-            <section class="filme">
-                <img class="poster" src="./images/velozes.jpg" alt="">
-                <p class="titulo">Velozes</p>
-                <div class="nota">
-                    <span class="material-icons">
-                        star
-                    </span>
-                    <p>8,8</p>
-                </div>
-                <a class="botao" href="">Detalhes</a>
-            </section>
-            <section class="filme">
-                <img class="poster" src="./images/jolt.jpg" alt="">
-                <p class="titulo">Jolt</p>
-                <div class="nota">
-                    <span class="material-icons">
-                        star
-                    </span>
-                    <p>8,8</p>
-                </div>
-                <a class="botao" href="">Detalhes</a>
-            </section>
+        <h2 id="filmes_alta">Filmes em alta</h2>
+        <div class="lista-de-filmes" id="filmes"></div>
 
-        </div>
-
-        <h2 id="series">Séries em alta</h2>
+        <h2 id="series_alta">Séries em alta</h2>
+        <div class="lista-de-filmes" id="series"></div>
 
     </main>
 
 </body>
 
+<script src="./js/script.js"></script>
+<script src="./js/CardFilme.js"></script>
+
 </html>
+

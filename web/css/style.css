@@ -83,6 +83,7 @@ main h2 {
     padding: .8rem 0;
     text-align: center;
     transition: box-shadow all 1s ease-in-out;
+    cursor: pointer;
 }
 
 .botao:hover {

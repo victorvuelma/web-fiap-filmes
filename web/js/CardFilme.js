@@ -26,7 +26,7 @@ function CardFilme(dados) {
 
   const botao = document.createElement("a");
   botao.classList.add("botao");
-  botao.innerHTML = "detalhes";
+  botao.innerHTML = "Detalhes";
   botao.href = "detalhes.html?id=" + dados.id + "&type=" + dados.media_type;
 
   filme.appendChild(poster);

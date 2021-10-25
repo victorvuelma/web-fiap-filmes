@@ -22,6 +22,8 @@ fetch(getUrl).then((getResponse) =>
   getResponse.json().then((getJson) => {
     body.appendChild(Header(getJson));
 
+    document.title = "FIAP Filmes - " + (getJson.title || getJson.name);
+
     fetch(getCreditsUrl).then((creditsResponse) =>
       creditsResponse.json().then((creditsJson) => {
         body.appendChild(Main(getJson, creditsJson));
